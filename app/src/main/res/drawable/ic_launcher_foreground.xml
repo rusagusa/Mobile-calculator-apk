@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer accent drop shadow -->
+    <path
+        android:fillColor="#0D0E15"
+        android:pathData="M33,26h42c4.4,0,8,3.6,8,8v40c0,4.4,-3.6,8,-8,8h-42c-4.4,0,-8,-3.6,-8,-8v-40C25,29.6,28.6,26,33,26z" />
+        
+    <!-- Main Calculator solid frame -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M34,25h40c4.97,0,9,4.03,9,9v40c0,4.97,-4.03,9,-9,9h-40c-4.97,0,-9,-4.03,-9,-9v-40C25,29.03,29.03,25,34,25z" />
+
+    <!-- Internal slate background -->
+    <path
+        android:fillColor="#1E293B"
+        android:pathData="M36,27h36c3.87,0,7,3.13,7,7v36c0,3.87,-3.13,7,-7,7h-36c-3.13,0,-7,-3.13,-7,-7v-36C29,30.13,32.13,27,36,27z" />
+
+    <!-- Screen display area -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M33,32h42v10h-42z" />
+
+    <!-- Active digit light indicator -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M70,35h2v4h-2z" />
+
+    <!-- Grid row 1 of buttons -->
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M34,47h7v5h-7z M44,47h7v5h-7z M54,47h7v5h-7z" />
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M64,47h10v5h-10z" />
+
+    <!-- Grid row 2 of buttons -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M34,55h7v5h-7z M44,55h7v5h-7z M54,55h7v5h-7z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M64,55h10v5h-10z" />
+
+    <!-- Grid row 3 of buttons -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M34,63h7v5h-7z M44,63h7v5h-7z M54,63h7v5h-7z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M64,63h10v5h-10z" />
+
+    <!-- Grid row 4 of buttons -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M34,71h7v5h-7z M44,71h7v5h-7z M54,71h7v5h-7z" />
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M64,71h10v5h-10z" />
+
+</vector>
