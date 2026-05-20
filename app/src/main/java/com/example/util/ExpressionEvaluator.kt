@@ -159,6 +159,7 @@ object ExpressionEvaluator {
         return when (op) {
             "+", "-" -> 1
             "*", "/" -> 2
+            "√" -> 3
             else -> 0
         }
     }
@@ -170,6 +171,13 @@ object ExpressionEvaluator {
             if (num != null) {
                 valStack.add(num)
             } else {
+                if (token == "√") {
+                    if (valStack.isEmpty()) continue
+                    val a = valStack.removeAt(valStack.lastIndex)
+                    val res = if (a < 0.0) Double.NaN else sqrt(a)
+                    valStack.add(res)
+                    continue
+                }
                 if (valStack.size < 2) continue
                 val b = valStack.removeAt(valStack.lastIndex)
                 val a = valStack.removeAt(valStack.lastIndex)
