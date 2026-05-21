@@ -104,7 +104,7 @@ fun CalculatorScreen(
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .weight(1.2f)
+                    .weight(1.0f)
                     .clip(RoundedCornerShape(24.dp))
                     .background(displayBgGradient)
                     .padding(24.dp)
@@ -170,13 +170,14 @@ fun CalculatorScreen(
                 }
             }
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(8.dp))
 
             Column(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .weight(2.5f),
-                verticalArrangement = Arrangement.spacedBy(10.dp)
+                    .widthIn(max = 340.dp)
+                    .align(Alignment.CenterHorizontally)
+                    .weight(2.8f),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 val buttonRows = listOf(
                     listOf("AC", "( )", "√", "÷"),
@@ -189,7 +190,7 @@ fun CalculatorScreen(
                 buttonRows.forEach { row ->
                     Row(
                         modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.spacedBy(10.dp)
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
                         row.forEach { char ->
                             Box(
@@ -268,10 +269,10 @@ fun CalculatorScreen(
                     onClick = { viewModel.onEqualClick() },
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(56.dp)
+                        .height(48.dp)
                         .testTag("key_equal"),
                     colors = ButtonDefaults.buttonColors(containerColor = primaryAccent),
-                    shape = RoundedCornerShape(28.dp),
+                    shape = RoundedCornerShape(24.dp),
                     elevation = ButtonDefaults.buttonElevation(defaultElevation = 4.dp)
                 ) {
                     Text(
